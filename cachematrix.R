@@ -9,7 +9,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Calculate the inverse and cache the saved value
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
