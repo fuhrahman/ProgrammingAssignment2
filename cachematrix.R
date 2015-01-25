@@ -1,5 +1,5 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Create the cache of a matrix and return inverse matrix if already computed previously
+## Assumption: matrix supplied is always invertible.
 
 ## Create a matrix and cache the inverse
 ## test function to save compute time
