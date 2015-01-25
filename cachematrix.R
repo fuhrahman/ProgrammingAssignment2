@@ -1,8 +1,9 @@
 ## Create the cache of a matrix and return inverse matrix if already computed previously
 ## Assumption: matrix supplied is always invertible.
+## Function to save compute time
 
 ## Create a matrix and cache the inverse
-## test function to save compute time
+
 
 makeCacheMatrix <- function(x = matrix()) {
 
@@ -22,6 +23,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Calculate the inverse and cache the saved value
+## If inverse is calculated for static matrix, retrive cached value
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
@@ -31,6 +33,7 @@ cacheSolve <- function(x, ...) {
                 return(m)
         }
         data <- x$get()
+        #Solve the inverse of a square matrix
         m <- solve(data, ...)
         x$setmean(m)
         m
